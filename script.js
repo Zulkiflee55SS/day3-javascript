@@ -11,3 +11,9 @@ function changeBgColor() {
 function showMessage() {
     alert("สวัสดี ฉันชื่อซุล!");
 }
+function copyColor() {
+    let colorText = document.getElementById("colorCode").innerText.replace("สีปัจจุบัน: ", "");
+    navigator.clipboard.writeText(colorText).then(() => {
+        alert("คัดลอกรหัสสีสำเร็จ: " + colorText);
+    });
+}
