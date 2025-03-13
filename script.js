@@ -8,3 +8,6 @@ function changeBgColor() {
     // แสดงรหัสสีที่เปลี่ยน
     document.getElementById("colorCode").innerText = "สีปัจจุบัน: " + randomColor;
 }
+function showMessage() {
+    alert("สวัสดี ฉันชื่อซุล!");
+}
